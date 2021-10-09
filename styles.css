@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --backFill: #121212;
+    --navbFill: #202124;
+    --textFill: #efefef;
+    --gradFill: #113944;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    color: var(--textFill);
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+    background-color: var(--backFill);
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+.name {
+    width: 15vw;
+    height: 10vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h2 {
+    width: 15vw;
+    text-align: left;
+}
+
+h3 {
+    width: 15vw;
+    text-align: left;
+    font-weight: 300;
+}
+
+img {
+    width: 4.5vh;
+    height: 4.5vh;
+    padding-bottom: 0.5vh;
+}
+
+.link a {
+    width: 9vh;
+    height: 9vh;
+    border-radius: 2vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.discord {
+    background-color: #5865F2;
+}
+
+.youtube {
+    background-color: #F40407;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.twitch {
+    background-color: #6441a5;
+}
+
+.links {
+    width: 60vw;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.container {
+    padding-left: 10vw;
+    flex-direction: column;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+
+.link {
+    width: 8vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 80vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--navbFill);
+    border-bottom: #efefef 1px solid;
+}
