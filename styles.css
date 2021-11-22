@@ -7,6 +7,10 @@
     --gradFill: #113944;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,8 +29,18 @@ body {
     overflow: auto;
 }
 
+.item {
+    background: linear-gradient(90deg, rgb(14, 57, 88) 0%, rgba(0,0,0,1) 40%, rgb(92, 31, 41) 100%);
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: #efefef 1px solid;
+}
+
 .name {
-    width: 15vw;
+    width: 30vw;
     height: 10vh;
     flex-direction: column;
     display: flex;
@@ -34,13 +48,47 @@ body {
     justify-content: space-evenly;
 }
 
+.links {
+    width: 65vw;
+    height: 10vh;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.link {
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link a {
+    width: 18vh;
+    height: 18vh;
+    border-radius: 2vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.linkB {
+    width: 18vh;
+    height: 18vh;
+}
+
 h2 {
-    width: 15vw;
+    width: 25vw;
     text-align: left;
 }
 
 h3 {
-    width: 15vw;
+    width: 25vw;
     text-align: left;
     font-weight: 300;
 }
@@ -49,18 +97,6 @@ img {
     width: 4.5vh;
     height: 4.5vh;
     padding-bottom: 0.5vh;
-}
-
-.link a {
-    width: 9vh;
-    height: 9vh;
-    border-radius: 2vh;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-weight: 900;
 }
 
 .discord {
@@ -79,36 +115,9 @@ img {
     background-color: #6441a5;
 }
 
-.links {
-    width: 60vw;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
 .container {
-    padding-left: 10vw;
     flex-direction: column;
     display: flex;
     align-items: left;
     justify-content: center;
-}
-
-.link {
-    width: 8vw;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.item {
-    width: 80vw;
-    height: 15vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--navbFill);
-    border-bottom: #efefef 1px solid;
 }
